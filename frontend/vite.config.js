@@ -1,9 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  root: "./", // Assuming index.html is in the root of the project
   plugins: [react()],
   server: {
     proxy: {
@@ -12,6 +10,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist", // Output directory for build files
+    outDir: "dist", // The output directory for the build files
   },
 });
